@@ -1,6 +1,6 @@
 # Introduction à R Commander
 
-Cette formation rapide, prévue sur trois fois 1h30 pendant l'heure du midi, vise à démarrer rapidement dans l'utilisation de [R Commander](https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/). Les trois séances se déroulent comme suit. Elle se donnent à distance via Teams pour la communauté [UMONS](https://web.umons.ac.be/fr/). Les participants doivent installer R et R Commander sur un PC portable sous Windows 10 ou sous MacOS Catalina ou Big Sur (un tutoriel d'installation étape par étape sera fourni).
+Cette formation rapide dans le cadre de STAT for U, prévue sur trois fois 1h30 pendant l'heure du midi, vise à démarrer rapidement dans l'utilisation de [R Commander](https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/). Les trois séances se déroulent comme suit. Elle se donnent à distance via Teams pour la communauté [UMONS](https://web.umons.ac.be/fr/). Les participants doivent installer R et R Commander sur un PC portable sous Windows 10 ou sous MacOS Catalina ou Big Sur (un tutoriel d'installation étape par étape sera fourni).
 
 ## Séance n°1
 
