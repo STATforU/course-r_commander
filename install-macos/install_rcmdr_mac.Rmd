@@ -49,7 +49,7 @@ Ce fichier est un installeur qui place R et ses dépendances automatiquement pou
 
 # Installation de XQuartz
 
-Téléchargez XQuartz depuis \<<https://www.xquartz.org>\> et lancez sont installeur. Il s'agit d'un logiciel qui permet d'afficher des fenêtres de type X11 que R Commander utilise. Vous verrez d'ailleurs que ses fenêtres ont une icône "X" et ont un look qui diffère sensiblement du look des fenêtres Mac classiques.
+Téléchargez XQuartz depuis \<<https://www.xquartz.org>\> et lancez son installeur. Il s'agit d'un logiciel qui permet d'afficher des fenêtres de type X11 que R Commander utilise. Vous verrez d'ailleurs que ces fenêtres ont une icône "X" et ont un look qui diffère sensiblement du look des fenêtres Mac classiques.
 
 ![](figures/mac_install02_xquartz.png)
 
@@ -57,7 +57,7 @@ Téléchargez XQuartz depuis \<<https://www.xquartz.org>\> et lancez sont instal
 
 # Lancement de R et installation de R Commander
 
-À présent, lancez R. Allez dans le dossier **Applications**, repérez l'entrée **R** qui y a été rajoutée et double-cliquez dessus.
+À présent, lancez R. Pour cela, allez dans le dossier **Applications**, repérez l'entrée **R** qui y a été rajoutée et double-cliquez dessus.
 
 ![](figures/mac_install03_start_R.png)
 
@@ -119,7 +119,7 @@ La fenêtre principale de R Commander se présente comme suit :
 
 Pour éviter les temps de latence erratiques dans R Commander, vous devez désactiver la fonction "app nap" de MacOS pour R. Allez dans le menu en haut de la fenêtre de R Commander et sélectionnez le menu `Outils -> Gestion de Mac OS X nap pour R.app...`. Sélectionnez l'option "désactivé" dans la boite de dialogue et cliquez sur le bouton `<OK>`.
 
-L'installation de R Commander est terminez. Quittez maintenant R Commander et R en allant sélectionner dans le menu `Fichier -> Sortir -> Fermer Commander et R`. Aux questions posées, répondez `<OK>`.
+L'installation de R Commander est terminée. Quittez maintenant R Commander et R en allant sélectionner dans le menu `Fichier -> Sortir -> Fermer Commander et R`. Aux questions posées, répondez `<OK>`.
 
 \newpage
 
@@ -188,14 +188,22 @@ Ce message s'affiche parce que l'application n'est **pas** "notarisée" (vous de
 
 Il est toutefois possible d'en forcer le démarrage en cliquant bouton droit dessus et en sélectionnant l'entrée `Open` ou `Ouvrir` **tout en appuyant simultanément sur la touche `<Option>`**. Vous devez alors voir la boite de dialogue suivante où vous pouvez cliquer sur le bouton `<Open>`.
 
+Si malgré ces opérations, votre Mac refuse toujours de l'installer, vous verrez une fenêtre comme ci dessous :
+
+::: {.center data-latex=""}
+
+![](figures/mac_install08_launcher4.png){width="42%"}
+
+:::
+
+Cela signifie que vos paramètres de sécurité n'autorisent *strictement aucune* application non signée à s'exécuter. Vous devez alors indiquer une exception dans le panneau de configuration. Allez dans le menu "pomme" tout en haut à gauche, puis `Préférences Système...,` sélectionnez `Sécurité & Confidentialité` (icône en forme de maison coffre-fort). Normalement, vous devriez y voir un évènement relatif au programme. Vous devez cliquer sur `<Ouvrir quand même>`. Il se peut que vous deviez d'abord cliquer sur le cadenas en bas à gauche et entrer le mot de passe pour déverrouiller temporairement votre système. Un fois l'opération terminée, recliquez sur le cadenas pour reverrouiller, quittez la fenêtre préférence et réessayez de lancer `R Commander (fr)` via le bouton droit de la souris et l'entrée de menu contextuel `Open` en même temps que vous maintenez la touche `<Option>` enfoncée. Normalement maintenant, cela devrait fonctionner.
+
 ::: {.center data-latex=""}
 
 ![](figures/mac_install08_launcher3.png){width="76%"}
 
 :::
 
-Enfin, dernière étape, vous devez autoriser l'application à contrôler le terminal en cliquant sur le bouton `<OK>` dans la boite de dialogue qui apparaît ensuite.
+Enfin, dernière étape, vous devez autoriser l'application à contrôler le terminal en cliquant sur le bouton `<OK>` dans la boite de dialogue qui apparaît la première fois que `R Commander (fr)` se lance.
 
-La fenêtre principale de R commander doit apparaître au bout d'un court laps de temps. À partir de ce moment-là, vous pouvez utiliser l'application `R Commander (fr)` directement normalement comme pour toute autre application en double-cliquant dessus.
-
---------
+La fenêtre principale de R commander doit apparaître au bout d'un court laps de temps. À partir de ce moment-là, vous pouvez utiliser l'application simplement en double-cliquant dessus.

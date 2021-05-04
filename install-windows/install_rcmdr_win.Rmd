@@ -143,7 +143,7 @@ Une fois l'installation terminée, entrez `library("Rcmdr")` orthographié exact
 
 :::
 
-Encore d'autre packages sont proposés à l'installation. Cliquez `<Oui>`.
+Encore d'autres packages sont proposés à l'installation. Cliquez `<Oui>`.
 
 ::: {.center data-latex=""}
 
@@ -163,6 +163,6 @@ L'installation est terminée. Dans cette fenêtre, vous pouvez aller dans le men
 
 # Démarrage de R Commander
 
-Le plus simple pour votre utilisation routinière de R Commander est de lancer d'abord R comme vous l'avez fait plus haut (vous pouvez épingler le programme dans la barre des tâches pour un accès plus rapide), et ensuite d'entrer l'instruction `library("Rcmdr")` et `<entrée>` pour lancer R Commander depuis R. Vous être maintenant prêt à travailler.
+Le plus simple pour votre utilisation routinière de R Commander est de lancer d'abord R comme vous l'avez fait plus haut (vous pouvez épingler le programme dans la barre des tâches pour un accès plus rapide), et ensuite d'entrer l'instruction `library("Rcmdr")` et `<entrée>` pour lancer R Commander depuis R. Vous êtes maintenant prêt à travailler.
 
 -------
