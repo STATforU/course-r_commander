@@ -19,14 +19,12 @@ Ce tutoriel explique pas à pas comment installer R version 4.0.5 et R Commander
 
 \vspace{10cm}
 
-----------
+------------------------------------------------------------------------
 
 ::: {.center data-latex=""}
-
 *Ce document est une contribution à [STAT for U](https://github.com/STATforU).*
 
 ![](figures/STATforU.pdf)
-
 :::
 
 \newpage
@@ -35,7 +33,7 @@ Ce tutoriel explique pas à pas comment installer R version 4.0.5 et R Commander
 
 ![](figures/win_install01_R.png)
 
-Naviguez vers le site [<http://cran.r-project.org>](http://cran.r-project.org){.uri}. Ensuite allez dans la section **Download R for Windows**, et puis dans la section **base** à la page suivante.
+Naviguez vers le site [\<http://cran.r-project.org\>](http://cran.r-project.org){.uri}. Ensuite allez dans la section **Download R for Windows**, et puis dans la section **base** à la page suivante.
 
 ![](figures/win_install01_R2.png)
 
@@ -44,9 +42,7 @@ Vous téléchargez la dernière version de R (ici **Download R 4.0.5 for Windows
 Lancez cet installeur `R-4.0.5-win.exe` une fois qu'il est téléchargé. Autorisez l'application à s'installer (*vous devez avoir des droits administrateurs sur le PC pour pouvoir le faire*).
 
 ::: {.center data-latex=""}
-
 ![](figures/win_install02_rinst1.png){width="50%"}
-
 :::
 
 Sélectionnez le français pour l'installation.
@@ -112,9 +108,7 @@ Dans la console R, entrez l'instruction `install.packages("Rcmdr")`et validez av
 ![](figures/win_install03_rcmdr3.png)
 
 ::: {.center data-latex=""}
-
 ![](figures/win_install03_rcmdr4.png){width="62%"}
-
 :::
 
 R ne peut à ce stade enregistrer les nouveaux packages dans le dossier système. Il vous propose d'utiliser une bibliothèque personnelle. Cliquez sur le bouton `<Oui>`. Ensuite, acceptez l'emplacement proposé par défaut et cliquez une seconde fois sur `<Oui>`.
@@ -122,11 +116,9 @@ R ne peut à ce stade enregistrer les nouveaux packages dans le dossier système
 R vous demande ensuite depuis quel serveur ("Secure CRAN mirrors") vous désirez récupérer les packages. Vous pouvez conserver le serveur **0-Cloud** proposé en première position. Cliquez `<OK>`.
 
 ::: {.center data-latex=""}
-
 ![](figures/win_install03_rcmdr5.png)
 
 ![](figures/win_install03_rcmdr6.png){width="73%"}
-
 :::
 
 Attendez que R télécharge et installe tous les packages nécessaires. Cela peut prendre un certain temps. Si R semble bloqué, attendez qu'il rende la main et réessayez. Si cela ne fonctionne toujours pas, redémarrez R et essayez un autre serveur. Si R vous demande d'installer certains packages depuis les sources, cliquez `<Non>`.
@@ -138,17 +130,13 @@ Attendez que R télécharge et installe tous les packages nécessaires. Cela peu
 Une fois l'installation terminée, entrez `library("Rcmdr")` orthographié exactement comme cela (attention encore une fois aux majuscules et minuscules) et puis tapez sur la touche `<entrée>`.
 
 ::: {.center data-latex=""}
-
 ![](figures/win_install03_rcmdr8.png){width="72%"}
-
 :::
 
 Encore d'autres packages sont proposés à l'installation. Cliquez `<Oui>`.
 
 ::: {.center data-latex=""}
-
 ![](figures/win_install03_rcmdr9.png){width="90%"}
-
 :::
 
 Dans la boite de dialogue **Installer les paquets manquants**, ne changez rien par rapport aux options par défaut et cliquez `<OK>`.
@@ -165,4 +153,4 @@ L'installation est terminée. Dans cette fenêtre, vous pouvez aller dans le men
 
 Le plus simple pour votre utilisation routinière de R Commander est de lancer d'abord R comme vous l'avez fait plus haut (vous pouvez épingler le programme dans la barre des tâches pour un accès plus rapide), et ensuite d'entrer l'instruction `library("Rcmdr")` et `<entrée>` pour lancer R Commander depuis R. Vous êtes maintenant prêt à travailler.
 
--------
+------------------------------------------------------------------------
