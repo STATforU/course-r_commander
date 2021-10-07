@@ -1,7 +1,7 @@
 ---
 title: "Installation de R Commander sous MacOS"
 author: "Philippe Grosjean & Guyliann Engels"
-date: "2021-05-03"
+date: "2021-10-07"
 output: 
   pdf_document: 
     fig_caption: yes
@@ -15,9 +15,9 @@ knitr::opts_chunk$set(echo = TRUE, fig.align = "center")
 
 # Introduction
 
-Ce tutoriel explique pas à pas comment installer R version 4.0.5 et R Commander version 2.7-1 (les dernières versions de ces logiciels au 2021-05-03) sous MacOS. Assurez-vous d'avoir un Mac suffisamment puissant (ceux de ces 4 à 5 dernières années conviennent tous, à l'exception peut-être des premiers MacBook 12''). Les nouveaux Macs à puce M1 conviennent également. Vous devez aussi avoir les droits administrateurs pour pouvoir y installer des logiciels et au moins 25 à 30Go de libre sur le disque dur principal.
+Ce tutoriel explique pas à pas comment installer R version 4.0.5 (ou une version plus récente de R, la procédure reste la même) et R Commander version 2.7-1 sous MacOS. Assurez-vous d'avoir un Mac suffisamment puissant (ceux de ces 4 à 5 dernières années conviennent tous, à l'exception peut-être des premiers MacBook 12''). Les nouveaux Macs à puce M1 conviennent également. Vous devez aussi avoir les droits administrateurs pour pouvoir y installer des logiciels et au moins 25 à 30Go de libre sur le disque dur principal.
 
-\vspace{10cm}
+\vspace{8cm}
 
 ------------------------------------------------------------------------
 
@@ -119,9 +119,9 @@ L'installation de R Commander est terminée. Quittez maintenant R Commander et R
 
 Il existe plusieurs façons de démarrer R Commander sous MacOS. Choisissez celle que vous préférez !
 
-## Démarrage depuis R.app
+## Démarrage depuis R
 
-Vous pouvez continuer à lancer R depuis son icône dans le menu **Applications**, et R Commander ensuite via la commande `Sys.setenv(LANGUAGE = "fr"); library("Rcmdr")` dans R. R enregistre un historique des commandes par défaut. Lorsque vous lancez R, vous pouvez les récupérer avec les flèches `<Haut>` et `<Bas>`. Ainsi, il ne faut pas se remémorer la commande à chaque lancement.
+Vous pouvez continuer à lancer R depuis son icône dans le menu **Applications**, et R Commander ensuite via la commande `Sys.setenv(LANGUAGE = "fr"); library("Rcmdr")` dans R, suivie de la touche `entrée` pour valider la commande. R enregistre un historique des commandes par défaut. Lorsque vous lancez R, vous pouvez les récupérer avec les flèches `<Haut>` et `<Bas>`. Ainsi, il ne faut pas se remémorer la commande à chaque lancement.
 
 ## Démarrage depuis le terminal
 

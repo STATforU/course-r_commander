@@ -1,7 +1,7 @@
 ---
 title: "Installation de R Commander sous Windows"
 author: "Philippe Grosjean & Guyliann Engels"
-date: "2021-05-03"
+date: "2021-10-07"
 output: 
   pdf_document: 
     fig_caption: yes
@@ -15,9 +15,9 @@ knitr::opts_chunk$set(echo = TRUE, fig.align = "center")
 
 # Introduction
 
-Ce tutoriel explique pas à pas comment installer R version 4.0.5 et R Commander version 2.7-1 (les dernières versions de ces logiciels au 2021-05-03) sous Windows 10. Assurez-vous d'avoir un PC suffisamment puissant. Évitez les chromebooks, les ordinateurs dédiés à du travail léger, ou trop vieux (plus ancien que 3 ou 4 ans). Un ordinateur muni d'un processeur Core i3, i5, i7 ou i9 de 6^ème^ génération ou plus, d'un processeur AMD Ryzen 5 ou plus, de minimum 4Go de mémoire vive (si possible 8Go), d'un disque dur rapide d'au moins 256Go, et d'un écran de 1920x1080 minimum devrait convenir. Vous devez aussi avoir les droits administrateurs pour pouvoir y installer des logiciels et au moins 25 à 30Go de libre sur le disque dur principal.
+Ce tutoriel explique pas à pas comment installer R version 4.0.5 (l'installation d'une version plus récente reste la même) et R Commander version 2.7-1 sous Windows 10. Assurez-vous d'avoir un PC suffisamment puissant. Évitez les chromebooks, les ordinateurs dédiés à du travail léger, ou trop vieux (plus ancien que 3 ou 4 ans). Un ordinateur muni d'un processeur Core i3, i5, i7 ou i9 de 6^ème^ génération ou plus, d'un processeur AMD Ryzen 5 ou plus, de minimum 4Go de mémoire vive (si possible 8Go), d'un disque dur rapide d'au moins 256Go, et d'un écran de 1920x1080 minimum devrait convenir. Vous devez aussi avoir les droits administrateurs pour pouvoir y installer des logiciels et au moins 25 à 30Go de libre sur le disque dur principal.
 
-\vspace{10cm}
+\vspace{8cm}
 
 ------------------------------------------------------------------------
 
@@ -37,7 +37,7 @@ Naviguez vers le site [\<http://cran.r-project.org\>](http://cran.r-project.org)
 
 ![](figures/win_install01_R2.png)
 
-Vous téléchargez la dernière version de R (ici **Download R 4.0.5 for Windows**).
+Vous téléchargez la dernière version de R (ici **Download R 4.0.5 for Windows,** ou une version plus récente).
 
 Lancez cet installeur `R-4.0.5-win.exe` une fois qu'il est téléchargé. Autorisez l'application à s'installer (*vous devez avoir des droits administrateurs sur le PC pour pouvoir le faire*).
 
@@ -85,7 +85,7 @@ R s'installe... À la fin, quittez l'installeur en cliquant sur le bouton `<Term
 
 # Lancement et configuration de R
 
-Allez dans le menu Démarrer et repérez l'entrée `R x64 4.0.5` dans le dossier `R`. Lancez-le. S'il n'y a que `R i386 4.0.5` ou si le premier ne fonctionne pas, vous avez peut-être un Windows 32bit. Utilisez alors `R i386 4.0.5` dorénavant. R démarre et vous obtenez ceci :
+Allez dans le menu Démarrer et repérez l'entrée `R x64 X.Y.Z` (où X.Y.Z est le numéro de version, dans mon cas, 4.0.5) dans le dossier `R`. Lancez-le. S'il n'y a que `R i386 X.Y.Z` ou si le premier ne fonctionne pas, vous avez peut-être un Windows 32bit. Utilisez alors `R i386 X.Y.Z` dorénavant. R démarre et vous obtenez ceci :
 
 ![](figures/win_install03_rcmdr1.png)
 
@@ -145,12 +145,28 @@ Encore une fois, laissez l'installation se faire. S'il vous est demandé une sec
 
 ![](figures/win_install04_fin.png)
 
-L'installation est terminée. Dans cette fenêtre, vous pouvez aller dans le menu `Fichier -> Sortir -> Fermer Commander et R`, et vous cliquez le bouton `<OK>` aux diverses questions qui vons sont posées ensuite.
+L'installation est terminée. Dans cette fenêtre, vous pouvez aller dans le menu `Fichier -> Sortir -> Fermer Commander et R`, et vous cliquez le bouton `<OK>` aux diverses questions qui vous sont posées ensuite.
 
 \newpage
 
 # Démarrage de R Commander
 
-Le plus simple pour votre utilisation routinière de R Commander est de lancer d'abord R comme vous l'avez fait plus haut (vous pouvez épingler le programme dans la barre des tâches pour un accès plus rapide), et ensuite d'entrer l'instruction `library("Rcmdr")` et `<entrée>` pour lancer R Commander depuis R. Vous êtes maintenant prêt à travailler.
+Nous vous proposons deux façons différentes de démarrer R Commander. La première est la plus simple à mettre en œuvre, la seconde est plus pratique à long terme.
 
-------------------------------------------------------------------------
+## Démarrage depuis R
+
+Vous pouvez continuer à lancer R depuis son icône dans le menu **Windows**, et R Commander ensuite via la commande `library(Rcmdr)` dans R (validez l'instruction par la touche `entrée` à la fin). La fenêtre de R Commander apparaît. Vous êtes maintenant prêt à travailler.
+
+## Raccourci de démarrage spécifique
+
+J'ai créé un raccourci Windows de démarrage de R Commander. Ce raccourcis est à charger depuis <https://go.sciviews.org/rcmdr-win>. Vous dézippez le fichier `R Commander (fr).lnk.zip` téléchargé, et ensuite, vous déplacez le raccourci `R Commander (fr)` où c'est le plus pratique pour vous (par exemple, **sur le bureau**).
+
+![](figures/Rcmdr_unzip_shortcut.png)
+
+Ce raccourci est écrit pour lancer R version 4.0.5. Si vous avez une autre version de R, vous allez devoir effectuer une petite adaptation avant de pouvoir l'utiliser. Pour cela, vous cliquez avec le bouton droit de la souris sur ce raccourci, et vous sélectionner **Propriétés** dans le menu contextuel. Vous allez éditer le champ **Démarrer dans:** pour refléter la version exacte de R que vous avez installée. Ensuite, cliquez sur le bouton **Appliquer**, puis le bouton **OK**.
+
+![](figures/Rcmdr_shortcut_windows.png)
+
+Si le raccourci est correct, vous pourrez démarrer R Commander directement en double-cliquant dessus. R se lance en fenêtre minimisée (regardez dans la barre de tâches) et après quelques secondes, la fenêtre de R Commander doit apparaître. Sinon, lisez le message d'erreur en restaurant la fenêtre de R : il est très probable que le chemin d'accès n'a pas été modifié comme il faut.
+
+Lorsque vous quittez R Commander démarré via ce raccourci, n'oubliez pas que la fenêtre de R minimisée est toujours là dans la barre des tâches : vous devez également la fermer séparément pour libérer la mémoire de l'ordinateur.
